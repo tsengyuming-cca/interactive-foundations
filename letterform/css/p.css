@@ -10,7 +10,7 @@ body{
     position: relative;
     width: 260px;
     height: 260px;
-    background: lightgrey;
+    background: white;
     margin: 20px;
 }
 
@@ -69,6 +69,12 @@ body{
     top: 40px;
     left: 50px;
     background: black;
+
+    transition: all 800ms ease 0s;
+}
+
+.leftstroke:hover{
+    width:39.57px;
 }
 
 .rightstroke{
@@ -83,14 +89,20 @@ body{
     border-bottom-width: 21px;
 }
 
-#rightstrokeblank {
+.rightstroke:hover ~ .rightstrokeblank{
+    left:150px;
+}
+
+.rightstrokeblank {
     width: 0px;
     height: 100px;
     border: 0 solid transparent;
     position: absolute;
-    top: -21px;
-    left: -40px;
-    border-left: 20px solid lightgrey;
+    top: 40px;
+    left: 170px;
+    border-left: 20px solid white;
     border-top-width: 21px;
     border-bottom-width: 21px; 
+
+    transition: all 800ms ease 0s;
 }

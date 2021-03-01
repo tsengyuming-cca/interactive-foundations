@@ -10,7 +10,7 @@ body{
     position: relative;
     width: 260px;
     height: 260px;
-    background: lightgrey;
+    background: white;
     margin: 20px;
 }
 
@@ -73,6 +73,14 @@ body{
     position: absolute;
     top: 40px;
     left: 170px;
+    transition: all 800ms ease 0s;
+}
+
+.topright-triangle:hover{
+    border-left-width: 25px;
+    border-right-width: 25px;
+    border-top-width: 8.75px;
+    left:165px;
 }
 
 .bottomright-triangle{
@@ -85,18 +93,27 @@ body{
     position: absolute;
     top: 130px;
     left: 70px;
+
+/*    transition: all 800ms ease 0s;*/
 }
 
-#innerblank{
+.innerblank:hover {
+    top:140px;
+    border-right-width:136px ;
+}
+
+.innerblank{
     width: 0;
     height: 0;
     border: 0 solid transparent;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 130px;
+    left: 70px;
     border-left-width: 0px;
     border-right-width: 121px;
-    border-bottom: 90px solid lightgray; 
+    border-bottom: 90px solid white; 
+
+    transition: all 800ms ease 0s;
 }
 
 .stroke{
@@ -108,14 +125,20 @@ body{
     background: black;
 }
 
-#strokeblank {
+.stroke:hover ~ .strokeblank{
+    left:30px;
+}
+
+.strokeblank {
     width: 0;
     height: 0;
     border: 0 solid transparent;
     position: absolute;
-    top: 80px;
-    left: 0px;
-    border-left: 20px solid lightgray;
+    top: 120px;
+    left: 50px;
+    border-left: 20px solid white;
     border-top-width: 10px;
     border-bottom-width: 10px; 
+
+    transition: all 800ms ease 0s;
 }

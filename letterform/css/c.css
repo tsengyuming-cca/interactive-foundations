@@ -10,7 +10,7 @@ body{
     position: relative;
     width: 260px;
     height: 260px;
-    background: lightgrey;
+    background: white;
     margin: 20px;
 }
 
@@ -26,16 +26,23 @@ body{
     left:170px;
 }
 
-#bottomright-triangleblank{
+.bottomright-triangle:hover ~ .bottomright-triangleblank{
+    border-right-width: 0px;
+}
+
+.bottomright-triangleblank{
     position: absolute;
+    z-index: 1;
     width: 0px;
     height: 0px;
     border: 0 solid transparent;
-    border-top: 20px solid lightgrey;
+    border-top: 20px solid white;
     border-left-width: 0px;
     border-right-width: 20px;
-    top:-20px;
-    left:0px;
+    top:200px;
+    left:170px;
+
+    transition: all 800ms ease 0s;
 }
 
 .topright-triangle {
@@ -50,16 +57,22 @@ body{
     left:170px;
 }
 
-#topright-triangleblank {
+.topright-triangle:hover ~ .topright-triangleblank{
+    border-right-width: 0px;
+}
+
+.topright-triangleblank {
     position: absolute;
     width: 0px;
     height: 0px;
     border: 0 solid transparent;
-    border-bottom: 20px solid lightgrey;
+    border-bottom: 20px solid white;
     border-left-width: 0px;
     border-right-width: 20px;
-    top:0px;
-    left:0px;
+    top:40px;
+    left:170px;
+
+    transition: all 800ms ease 0s;
 }
 
 .leftstroke{
@@ -74,14 +87,20 @@ body{
     left:50px;
 }
 
-#leftstrokeblank {
+.leftstroke:hover ~ .leftstrokeblank{
+    left:90px;
+}
+
+.leftstrokeblank {
     position: absolute;
     width: 0px;
     height: 180px;
     border: 0 solid transparent;
-    border-right: 20px solid lightgrey;
+    border-right: 20px solid white;
     border-top-width: 20px;
     border-bottom-width: 20px;
-    top:-20px;
-    left:20px;
+    top:40px;
+    left:70px;
+
+    transition: all 800ms ease 0s;
 }
