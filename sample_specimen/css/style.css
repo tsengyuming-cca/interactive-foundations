@@ -1,0 +1,359 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: lightgray;	
+}
+
+/* navigation */
+
+nav {
+	padding: 30px;
+}
+
+/* stage */
+
+#showcase {
+	width: 1200px;
+	height: 800px;
+	margin: auto;
+	overflow: visible;
+	position: relative;
+	top: calc(50vh - 400px);
+}
+
+/* letter */
+
+.letter {
+	position: absolute;
+	opacity: 0;
+	animation: opacity 1s ease 1s forwards;
+}
+
+@keyframes opacity{
+	from{ opacity: 0; }
+	to { opacity: 1; }
+}
+
+.bounding-box{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background: white;
+    margin: 20px;
+    display: inline-block;
+    border-radius:10px;
+}
+
+#c.bottomright-triangle{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 0 solid transparent;
+    border-top: 20px solid black;
+    border-left-width: 0px;
+    border-right-width: 40px;
+    top:200px;
+    left:170px;
+}
+
+#c.bottomright-triangle:hover ~ #c.bottomright-triangleblank{
+    border-right-width: 0px;
+}
+
+#c.bottomright-triangleblank{
+    position: absolute;
+    z-index: 1;
+    width: 0px;
+    height: 0px;
+    border: 0 solid transparent;
+    border-top: 20px solid white;
+    border-left-width: 0px;
+    border-right-width: 20px;
+    top:200px;
+    left:170px;
+
+    transition: all 800ms ease 0s;
+}
+
+#c.topright-triangle {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 0 solid transparent;
+    border-bottom: 20px solid black;
+    border-left-width: 0px;
+    border-right-width: 40px;
+    top:40px;
+    left:170px;
+}
+
+#c.topright-triangle:hover ~ #c.topright-triangleblank{
+    border-right-width: 0px;
+}
+
+#c.topright-triangleblank {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 0 solid transparent;
+    border-bottom: 20px solid white;
+    border-left-width: 0px;
+    border-right-width: 20px;
+    top:40px;
+    left:170px;
+
+    transition: all 800ms ease 0s;
+}
+
+#c.leftstroke{
+    position: absolute;
+    width: 0px;
+    height: 140px;
+    border: 0 solid transparent;
+    border-right: 40px solid black;
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+    top:40px;
+    left:50px;
+}
+
+#c.leftstroke:hover ~ #c.leftstrokeblank{
+    left:90px;
+}
+
+#c.leftstrokeblank {
+    position: absolute;
+    width: 0px;
+    height: 140px;
+    border: 0 solid transparent;
+    border-right: 20px solid white;
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+    top:40px;
+    left:70px;
+
+    transition: all 800ms ease 0s;
+}
+
+#k.topleft-triangle1{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 0 solid transparent;
+    border-left-width: 0px;
+    border-right-width: 19.57px;
+    border-top: 7px solid black;
+    top:40px;
+    left:70px;
+}
+
+#k.topleft-triangle2{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 0 solid transparent;
+    border-left-width: 19.57px;
+    border-right-width: 0px;
+    border-top: 7px solid black;
+    top:40px;
+    left:30.5px;
+}
+
+#k.bottomleft-triangle1 {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 0px;
+    border-right-width: 19.57px;
+    border-bottom: 7px solid black;
+    position: absolute;
+    top: 213px;
+    left: 70px;
+    z-index:2;
+}
+
+#k.bottomleft-triangle2 {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 19.57px;
+    border-right-width: 0px;
+    border-bottom: 7px solid black;
+    position: absolute;
+    top: 213px;
+    left: 30.5px;
+}
+
+#k.topright-triangle{
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 19.57px;
+    border-right-width: 19.57px;
+    border-top: 7px solid black;
+    position: absolute;
+    top: 40px;
+    left: 170px;
+    transition: all 800ms ease 0s;
+}
+
+#k.topright-triangle:hover{
+    border-left-width: 25px;
+    border-right-width: 25px;
+    border-top-width: 8.75px;
+    left:165px;
+}
+
+#k.bottomright-triangle{
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 0px;
+    border-right-width: 140.5px;
+    border-bottom: 90px solid black;
+    position: absolute;
+    top: 130px;
+    left: 70px;
+}
+
+#k.innerblank:hover {
+    top:140px;
+    border-right-width:136px ;
+}
+
+#k.innerblank{
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    position: absolute;
+    top: 130px;
+    left: 70px;
+    border-left-width: 0px;
+    border-right-width: 121px;
+    border-bottom: 90px solid white; 
+
+    transition: all 800ms ease 0s;
+}
+
+#k.stroke{
+    width: 20px;
+    height: 180px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    background: black;
+}
+
+#k.stroke:hover ~ #k.strokeblank{
+    left:30px;
+}
+
+#k.strokeblank {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    border-left: 20px solid white;
+    border-top-width: 10px;
+    border-bottom-width: 10px; 
+
+    transition: all 800ms ease 0s;
+}
+
+#p.topleft-triangle1{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 0 solid transparent;
+    border-left-width: 0px;
+    border-right-width: 19.57px;
+    border-top: 7px solid black;
+    top:40px;
+    left:70px;
+}
+
+#p.topleft-triangle2{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 0 solid transparent;
+    border-left-width: 19.57px;
+    border-right-width: 0px;
+    border-top: 7px solid black;
+    top:40px;
+    left:30.5px;
+}
+
+#p.bottomleft-triangle1 {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 0px;
+    border-right-width: 19.57px;
+    border-bottom: 7px solid black;
+    position: absolute;
+    top: 213px;
+    left: 70px;
+}
+
+#p.bottomleft-triangle2 {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 19.57px;
+    border-right-width: 0px;
+    border-bottom: 7px solid black;
+    position: absolute;
+    top: 213px;
+    left: 30.5px;
+}
+
+#p.leftstroke{
+    width: 20px;
+    height: 180px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    background: black;
+
+    transition: all 800ms ease 0s;
+}
+
+#p.leftstroke:hover{
+    width:39.57px;
+}
+
+#p.rightstroke{
+    width: 0;
+    height: 100px;
+    border: 0 solid transparent;
+    position: absolute;
+    top: 40px;
+    left: 169.5px;
+    border-left:40px solid black;
+    border-top-width: 21px;
+    border-bottom-width: 21px;
+}
+
+#p.rightstroke:hover ~ .rightstrokeblank{
+    left:149px;
+}
+
+#p.rightstrokeblank {
+    width: 0px;
+    height: 100px;
+    border: 0 solid transparent;
+    position: absolute;
+    top: 40px;
+    left: 169px;
+    border-left: 20px solid white;
+    border-top-width: 21px;
+    border-bottom-width: 21px; 
+
+    transition: all 800ms ease 0s;
+}

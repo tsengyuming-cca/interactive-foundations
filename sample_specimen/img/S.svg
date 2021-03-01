@@ -1,0 +1,10 @@
+<svg width="160" height="180" viewBox="0 0 160 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M140 101L120 80L160 101H140Z" fill="black"/>
+<path d="M140 159L120 180L160 159H140Z" fill="black"/>
+<rect x="140" y="101" width="20" height="58" fill="black"/>
+<path d="M20 21L40 3.8147e-06L0 21H20Z" fill="black"/>
+<path d="M20 79L40 100L0 79H20Z" fill="black"/>
+<rect width="20" height="58" transform="matrix(-1 0 0 1 20 21)" fill="black"/>
+<path d="M140 -1.74846e-06L159.968 20L120 0L140 -1.74846e-06Z" fill="black"/>
+<path d="M20 160L39.9683 180L0 160L20 160Z" fill="black"/>
+</svg>
