@@ -83,6 +83,7 @@ p{
 
 #exercises, #projects{
 	font-size: 20px;
-	display:inline-block;
-	
+	display: inline-block,center;
+	vertical-align: top;
+
 }
