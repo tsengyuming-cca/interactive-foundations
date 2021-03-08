@@ -1,10 +1,14 @@
+@import url(https://fonts.googleapis.com/css2?family=Rajdhani&display=swap);
+
 * {
 	margin: 0px;
 	padding: 0px;
 }
 
 body {
-	background: lightgray;	
+    background: #252422;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 800;
 }
 
 /* navigation */
@@ -24,6 +28,14 @@ nav {
 	top: calc(50vh - 400px);
 }
 
+.link{
+    color: #FDB731; 
+}
+
+.link:hover {
+    color: #BD0034;
+}
+
 /* letter */
 
 .letter {
@@ -37,14 +49,16 @@ nav {
 	to { opacity: 1; }
 }
 
+
 .bounding-box{
     position: relative;
     width: 260px;
     height: 260px;
-    background: white;
     margin: 20px;
     display: inline-block;
     border-radius:10px;
+    background:#FFFCF2;
+    left:145px;
 }
 
 #c.bottomright-triangle{
@@ -52,7 +66,7 @@ nav {
     width: 0px;
     height: 0px;
     border: 0 solid transparent;
-    border-top: 20px solid black;
+    border-top: 20px solid #252422;
     border-left-width: 0px;
     border-right-width: 40px;
     top:200px;
@@ -69,11 +83,11 @@ nav {
     width: 0px;
     height: 0px;
     border: 0 solid transparent;
-    border-top: 20px solid white;
+    border-top: 22px solid #FFFCF2;
     border-left-width: 0px;
     border-right-width: 20px;
-    top:200px;
-    left:170px;
+    top:199px;
+    left:169px;
 
     transition: all 800ms ease 0s;
 }
@@ -83,7 +97,7 @@ nav {
     width: 0px;
     height: 0px;
     border: 0 solid transparent;
-    border-bottom: 20px solid black;
+    border-bottom: 20px solid #252422;
     border-left-width: 0px;
     border-right-width: 40px;
     top:40px;
@@ -99,11 +113,11 @@ nav {
     width: 0px;
     height: 0px;
     border: 0 solid transparent;
-    border-bottom: 20px solid white;
+    border-bottom: 22px solid #FFFCF2;
     border-left-width: 0px;
     border-right-width: 20px;
-    top:40px;
-    left:170px;
+    top:39px;
+    left:169px;
 
     transition: all 800ms ease 0s;
 }
@@ -113,7 +127,7 @@ nav {
     width: 0px;
     height: 140px;
     border: 0 solid transparent;
-    border-right: 40px solid black;
+    border-right: 40px solid #252422;
     border-top-width: 20px;
     border-bottom-width: 20px;
     top:40px;
@@ -129,7 +143,7 @@ nav {
     width: 0px;
     height: 140px;
     border: 0 solid transparent;
-    border-right: 20px solid white;
+    border-right: 21px solid #FFFCF2;
     border-top-width: 20px;
     border-bottom-width: 20px;
     top:40px;
@@ -145,9 +159,9 @@ nav {
     border: 0 solid transparent;
     border-left-width: 0px;
     border-right-width: 19.57px;
-    border-top: 7px solid black;
+    border-top: 7px solid #252422;
     top:40px;
-    left:70px;
+    left:69px;
 }
 
 #k.topleft-triangle2{
@@ -157,9 +171,9 @@ nav {
     border: 0 solid transparent;
     border-left-width: 19.57px;
     border-right-width: 0px;
-    border-top: 7px solid black;
+    border-top: 7px solid #252422;
     top:40px;
-    left:30.5px;
+    left:31.5px;
 }
 
 #k.bottomleft-triangle1 {
@@ -168,10 +182,10 @@ nav {
     border: 0 solid transparent;
     border-left-width: 0px;
     border-right-width: 19.57px;
-    border-bottom: 7px solid black;
+    border-bottom: 7px solid #252422;
     position: absolute;
     top: 213px;
-    left: 70px;
+    left: 69px;
     z-index:2;
 }
 
@@ -181,10 +195,10 @@ nav {
     border: 0 solid transparent;
     border-left-width: 19.57px;
     border-right-width: 0px;
-    border-bottom: 7px solid black;
+    border-bottom: 7px solid #252422;
     position: absolute;
     top: 213px;
-    left: 30.5px;
+    left: 31.5px;
 }
 
 #k.topright-triangle{
@@ -193,7 +207,7 @@ nav {
     border: 0 solid transparent;
     border-left-width: 19.57px;
     border-right-width: 19.57px;
-    border-top: 7px solid black;
+    border-top: 7px solid #252422;
     position: absolute;
     top: 40px;
     left: 170px;
@@ -213,7 +227,7 @@ nav {
     border: 0 solid transparent;
     border-left-width: 0px;
     border-right-width: 140.5px;
-    border-bottom: 90px solid black;
+    border-bottom: 90px solid #252422;
     position: absolute;
     top: 130px;
     left: 70px;
@@ -233,7 +247,7 @@ nav {
     left: 70px;
     border-left-width: 0px;
     border-right-width: 121px;
-    border-bottom: 90px solid white; 
+    border-bottom: 91px solid #FFFCF2; 
 
     transition: all 800ms ease 0s;
 }
@@ -244,11 +258,11 @@ nav {
     position: absolute;
     top: 40px;
     left: 50px;
-    background: black;
+    background: #252422;
 }
 
 #k.stroke:hover ~ #k.strokeblank{
-    left:30px;
+    left:29px;
 }
 
 #k.strokeblank {
@@ -257,8 +271,8 @@ nav {
     border: 0 solid transparent;
     position: absolute;
     top: 120px;
-    left: 50px;
-    border-left: 20px solid white;
+    left: 49px;
+    border-left: 21px solid #FFFCF2;
     border-top-width: 10px;
     border-bottom-width: 10px; 
 
@@ -272,9 +286,9 @@ nav {
     border: 0 solid transparent;
     border-left-width: 0px;
     border-right-width: 19.57px;
-    border-top: 7px solid black;
+    border-top: 7px solid #252422;
     top:40px;
-    left:70px;
+    left:69px;
 }
 
 #p.topleft-triangle2{
@@ -284,9 +298,9 @@ nav {
     border: 0 solid transparent;
     border-left-width: 19.57px;
     border-right-width: 0px;
-    border-top: 7px solid black;
+    border-top: 7px solid #252422;
     top:40px;
-    left:30.5px;
+    left:32px;
 }
 
 #p.bottomleft-triangle1 {
@@ -295,10 +309,10 @@ nav {
     border: 0 solid transparent;
     border-left-width: 0px;
     border-right-width: 19.57px;
-    border-bottom: 7px solid black;
+    border-bottom: 7px solid #252422;
     position: absolute;
     top: 213px;
-    left: 70px;
+    left: 69px;
 }
 
 #p.bottomleft-triangle2 {
@@ -307,10 +321,10 @@ nav {
     border: 0 solid transparent;
     border-left-width: 19.57px;
     border-right-width: 0px;
-    border-bottom: 7px solid black;
+    border-bottom: 7px solid #252422;
     position: absolute;
     top: 213px;
-    left: 30.5px;
+    left: 32px;
 }
 
 #p.leftstroke{
@@ -319,7 +333,7 @@ nav {
     position: absolute;
     top: 40px;
     left: 50px;
-    background: black;
+    background: #252422;
 
     transition: all 800ms ease 0s;
 }
@@ -335,25 +349,39 @@ nav {
     position: absolute;
     top: 40px;
     left: 169.5px;
-    border-left:40px solid black;
+    border-left:40px solid #252422;
     border-top-width: 21px;
     border-bottom-width: 21px;
 }
 
 #p.rightstroke:hover ~ .rightstrokeblank{
-    left:149px;
+    left:148px;
 }
 
 #p.rightstrokeblank {
     width: 0px;
-    height: 58px;
+    height: 60px;
     border: 0 solid transparent;
     position: absolute;
-    top: 40px;
-    left: 169px;
-    border-left: 20px solid white;
+    top: 39px;
+    left: 168px;
+    border-left: 21px solid #FFFCF2;
     border-top-width: 21px;
     border-bottom-width: 21px; 
 
     transition: all 800ms ease 0s;
+}
+
+
+#c.bounding-box:hover{
+    box-shadow:0px 0px 50px #EB5E28;
+}
+
+#p.bounding-box:hover{
+    box-shadow:0px 0px 50px #EB5E28;
+}
+
+#k.bounding-box:hover{
+    box-shadow:0px 0px 50px #EB5E28;
+
 }
