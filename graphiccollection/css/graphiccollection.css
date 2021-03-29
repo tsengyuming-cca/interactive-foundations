@@ -1,0 +1,139 @@
+*{ 
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+#eyecontainer ul li{
+    width: 200px;
+    height:200px;
+}
+
+.kittybody{
+    left: 50%;
+    top: 50%;
+    max-width: 15%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: auto;
+}
+
+#eyecontainer{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    left: calc(50vw - 113px);
+    top: calc(50vh - 150px);
+    z-index:1;
+}
+
+#tailcontainer{
+    position: absolute;
+    width: 270px;
+    height: 210px;
+    overflow: hidden;
+    left: calc(50vw + 105px);
+    top: calc(50vh - 25px);
+    z-index:-1;
+}
+
+#mouthcontainer{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    overflow:hidden;
+    left: calc(50vw - 109px);
+    top: calc(50vh - 135px);
+    z-index: 1;
+}
+
+.eye{
+    width:800px;
+    position: absolute;
+    animation-name: carousel_h;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+.tail{
+    width:270px;
+    position: absolute;
+    animation-name: carousel_vt;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+.mouth{
+    width:200px;
+    position: absolute;
+    animation-name: carousel_vm;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes carousel_h {
+    0%,30%{
+        left: 0;
+    }
+    35%,65%{
+        left: -200px;
+    }
+    70%,99%{
+        left: -400px;
+    }
+    100%{
+        left: -600px;
+    }   
+}
+
+@keyframes carousel_vt {
+    0%,30%{
+        top: 0;
+    }
+    35%,65%{
+        top: -214px;
+    }
+    70%,99%{
+        top: -428px;
+    }
+    100%{
+        top: -642px;
+    }   
+}
+
+@keyframes carousel_vm {
+    0%,30%{
+        top: 0;
+    }
+    35%,65%{
+        top: -200px;
+    }
+    70%,99%{
+        top: -390px;
+    }
+    100%{
+        top: -600px;
+    }   
+}
+.pic li{
+    float: left;
+}
+
+#eye1,#eye2,#eye3{
+    width: 200px;
+    height: 100px;
+}
+
+#tail1, #tail2,#tail3{
+    width: 270px;
+    height: 210px;
+}
+
+#mouth1, #mouth2, #mouth3{
+    width:200px;
+    height: 200px;
+}
