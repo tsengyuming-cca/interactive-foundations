@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css2?family=Rajdhani&display=swap);
+
+*{ 
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;
+}
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+}
+
+body{
+  background-color: #141e30;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  text-align:center;
+}
+
+h2{
+	margin-top:10px;
+	margin-bottom:20px;
+}
+
+nav{
+	text-align:left;
+}
+
+.link{ 
+	color: #FDB731; 
+}
+
+.link:hover {
+	color: #BD0034;
+}
+
+img{
+	position:relative;
+	width: 50%;
+	height: auto;
+	margin-top: 25px;
+	margin-bottom: 0;
+}

@@ -19,6 +19,22 @@ body{
     border-radius: 20px 20px 20px 20px;
 }
 
+.body:hover ~ .light{
+    background: rgb(0, 255, 21);
+    box-shadow: 0 0 23px 10px rgba(0, 255, 21, 1);
+}
+
+.body:hover ~.drumpaper3{
+    animation: vibration 0.5s infinite linear;
+}
+
+.body:hover ~.drumpaper2{
+    animation: vibration1 0.5s infinite linear;
+    animation-delay: 0.25s;
+}
+
+
+
 .button1 {
     width: 50px;
     height: 50px;
@@ -42,7 +58,7 @@ body{
 .light{
     width: 5px;
     height: 5px;
-    background: rgb(0, 255, 21);
+    background: rgb(255,255,255);
     position: absolute;
     top:482px;
     left:297.5px;
@@ -97,4 +113,57 @@ body{
     top:145px;
     left:275px;
     border-radius:25px 25px 25px 25px;
+}
+
+@keyframes vibration {
+  0% {
+    transform:scale(1);
+  }
+  25% {
+    transform:scale(1.13);
+  }
+  30% {
+    transform:scale(1.2);
+  }
+  45% {
+    transform:scale(1.15);
+  }
+  65% {
+    transform:scale(1.13);
+  }
+  75% {
+    transform:scale(1.45);
+  }
+  80% {
+    transform:scale(1.15);
+  }
+  100%{
+    transform:scale(1);
+  }
+}
+@keyframes vibration1 {
+  0% {
+    transform:scale(1);
+  }
+  25% {
+    transform:scale(1.03);
+  }
+  30% {
+    transform:scale(1.02);
+  }
+  45% {
+    transform:scale(1.05);
+  }
+  65% {
+    transform:scale(1.03);
+  }
+  75% {
+    transform:scale(1.02);
+  }
+  80% {
+    transform:scale(1.05);
+  }
+  100%{
+    transform:scale(1);
+  }
 }
