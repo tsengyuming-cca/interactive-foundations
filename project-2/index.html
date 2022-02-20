@@ -1,0 +1,335 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="asset/sprite_60fps.css">
+  <link rel="stylesheet" type="text/css" href="asset/main.css">
+  <link rel="stylesheet" type="text/css" href="asset/locomotive-scroll.css">
+</head>
+
+<nav>
+    <a class="link" href="../index.html">Home</a>
+</nav>
+
+<body>
+<div data-scroll-container>
+  
+  <div data-scroll-section id="homepage">
+    <div class="shapeshifter play" id="shifter_conveyor" style="background-image: url(asset/sprite_60fps.svg)"></div>
+    <div class="backgroundImage" id="backgroundLine1"></div>
+    <div class="backgroundImage" id="backgroundLine2"></div>
+    <div class="backgroundImage" id="backgroundLine3"></div>
+    <div class="backgroundText scroll-left" id="backgroundword1">
+      <p id="shifter1">Personal</p>
+    </div>
+    <div class="backgroundText scroll-right" id="backgroundword2">
+      <p id="shifter2">Networks</p>
+    </div>
+    
+    <div id="container">
+        <ul class="pic icon" id="shifter_icon">
+            <li><img id="icon1" src="asset/Saly-13.png"/></li>
+            <li><img id="icon2" src="asset/Saly-44.png"/></li>
+            <li><img id="icon3" src="asset/Saly-38.png"/></li>
+            <li><img id="icon4" src="asset/Saly-131.png"/></li>
+        </ul>        
+    </div> 
+  </div>
+  <div id="lever_container" onclick="moveFunction()">
+    <div id="lever_arm">
+      <div id="lever_arm_body"></div>
+      <div id="lever_arm_head"></div>
+    </div>
+    <div id="lever_base"></div>
+    <div id="lever_armbase"></div>
+    <div id="lever_gear"></div>
+  </div>
+
+  <div id="sidebar">
+    <div id="clicksection" onclick="extendFunction()"></div>
+    <div id="sidebar_line"></div>
+    <div id="sidebar_content">
+      <h1 id="sidebar_title">Introducion</h1>
+      <br><br><br><br>
+      <p>Personal Networks is a semester-long project via a series of interview.</p>
+      <p>In this project, I have interviewed Yuchan Tseng, an Electrical Engineer graduated from University of Washington. Through the conversation, we discussed the boundary between engineer and artist. By discovering the similarities and differences between products and artworks, Yuchan delivered his idea of being an engineer and artist. </p>
+      <br><br><br><br>
+      <p style="font-size:20px">Yuming Tseng, creator of the website</p>
+      <p style="font-size:20px">California College of the Arts, MFA, Interactive Designer & Mechanical Engineer</p>
+    </div>
+  </div>
+
+  <div data-scroll-section id="interview_content">
+      <h1 data-scroll class="titleline">
+        <span style= "display:block">
+          <span style= "display:inline-block" data-scroll data-scroll-speed="5" data-scroll-delay="0.05">Interview of</span>
+        </span>
+
+        <span style= "display:block">
+          <span  style= "display:inline-block"  data-scroll data-scroll-speed="3" data-scroll-delay="0.05">YUCHAN</span>
+        </span>
+
+        <span style= "display:block">
+          <span style= "display:inline-block; color:red" data-scroll data-scroll-speed="5" data-scroll-delay="0.1" >T</span><!--
+          --><span style= "display:inline-block; color:red" data-scroll  data-scroll-speed="6" data-scroll-delay="0.2" >S</span><!--
+          --><span style= "display:inline-block; color:red" data-scroll data-scroll-speed="4" data-scroll-delay="0.3" >E</span><!--
+          --><span style= "display:inline-block; color:red" data-scroll  data-scroll-speed="5" data-scroll-delay="0.4" >N</span><!--
+          --><span style= "display:inline-block; color:red" data-scroll data-scroll-speed="6" data-scroll-delay="0.5" >G</span>
+        </span>   
+      </h1>
+
+      <div class="separateLine"></div>
+      <div class="backgroundText scroll-right QN" id="QN1">
+        <p id="shifter_N1">1</p>
+      </div>
+
+      <div class="QA">
+        <div class="Question" id="Question1">
+          Briefly Introduce Yourself
+        </div>
+        <div class="Answer" id="Answer1">
+          I am currently a management trainee, an engineering management trainee. Currently in the rotation phase, working on surgical robots in the robotics department. The status is that I have a lot of work to do every day and need to work overtime from time to time. In fact, it's not that much of work I have to do, it's just particularly happy and ambitious when I get together with my colleagues to do the work. I just really like the atmosphere of work.
+        </div>
+      </div>
+
+      <div class="separateLine _short"></div>
+      
+      <div class="backgroundText scroll-left QN" id="QN2">
+        <p id="shifter_N2">2</p>
+      </div>
+
+      <div class="QA">
+        <div class="Question" id="Question2">
+          What's the difference between engineer and art?
+        </div>
+        <div class="Answer" id="Answer2">
+          I think the difference between art and engineering is that if you need to make something into a product, engineering is enough; but if you want to make it into a commodity, then both engineering and art are needed. It's very difficult to be an artist and an engineer at the same time. I think an engineer is more of a person who does what he is told to do to make that happen. And when you want to be an engineer who can make a commodity, you need to have not only an engineering talent but also an artistic talent, which is rare.
+        </div>
+      </div>
+
+      <div class="separateLine _short"></div>
+      
+      <div class="backgroundText scroll-right QN" id="QN3">
+        <p id="shifter_N3">3</p>
+      </div>
+
+      <div class="QA">
+        <div class="Question" id="Question3">
+          If technologies are fully developed, what kind of machines or robots you want to build at most?
+        </div>
+        <div class="Answer" id="Answer3">
+          Artificial exoskeleton. It's the Iron Man kind, which enhances the body's function as a robot. Not only in the enhancement of existing body parts, but also additional parts. For example: a third hand, or a third leg. In addition, artificial exoskeleton can obtain various gear, to adapt to different people. For example, assistive and rehabilitative robots. A robot to assist the elderly and the disabled in their daily lives. The movement of these robots will be relatively slow and safe.
+        </div>
+      </div>
+
+      <div class="separateLine _short"></div>
+      
+      <div class="backgroundText scroll-left QN" id="QN4">
+        <p id="shifter_N4">4</p>
+      </div>
+
+      <div class="QA">
+        <div class="Question" id="Question4">
+          What's the relationship between you and the electronics?
+        </div>
+        <div class="Answer" id="Answer4">
+          My relationship with electronics. This is a very tricky question. I think that the electronics needs me to understand it. I hope I can learn more about the electronic so that I can play its full role.
+        </div>
+      </div>
+
+      <div class="separateLine _short"></div>
+      
+      <div class="backgroundText scroll-right QN" id="QN5">
+        <p id="shifter_N5">5</p>
+      </div>
+
+      <div class="QA">
+        <div class="Question" id="Question5">
+          What's your favorite robot character? Robot artwork?
+        </div>
+        <div class="Answer" id="Answer5">
+          My favorite product. That is definitely Tony Stark's Mark series. It's the Iron Man suits, that's what I want to do in the future. Incidentally, I think that those who do the design of Iron Man's battle suit must be able to understand the art. I think it is difficult for engineers to design such works that are both aesthetic and mechanical.
+        </div>
+      </div>
+
+      <div class="separateLine _short"></div>
+
+      <div class="backgroundText scroll-left QN" id="QN6">
+        <p id="shifter_N6">6</p>
+      </div>
+      <div data-scroll-section id="CS1">
+        <a data-scroll data-scroll-speed="1" href="https://cyberneticserendipity.net"><img src="asset/CS1.jpeg" alt="Cybernetic Senrendipity" id="CS1P"></a>
+      </div>
+      <div id="CS2">
+        <a href="http://cyberneticzoo.com/walking-machines/1969-ge-walking-truck-ralph-mosher-american/"><img src="asset/CS2.jpeg" alt="Cybernetic Anthropomorphous Machine" id="CS2P"></a>
+      </div>
+      <div class="QA">
+        <div class="Question" id="Question6">
+          What do you think about the exhibition of Cybernetic Serendipity? What is the meaning of interaction?
+        </div>
+        <div class="Answer" id="Answer6">
+          I think both human beings and machines should act. They should do something so that they can interact. I mean not only the machine should be functional, but also human beings should be involved. What's more important, it has to be very interesting and comfortable so that people are willing to have some connection with a set of electronic components. It's better to have a natural feeling as if you're interacting with a real person, not something you're doing intentionally.
+        </div>
+      </div>
+
+      <div class="separateLine _short"></div>
+      
+      <div class="backgroundText scroll-right QN" id="QN7">
+        <p id="shifter_N7">7</p>
+      </div>
+
+      <div class="QA">
+        <div class="Question" id="Question7">
+          If you become a robot/human, what superpowers, functions, abilities you want to obtain? Why? What about the least wanted thing?
+        </div>
+        <div class="Answer" id="Answer7">
+          I wish I could retain my original creativity as a human being, but my brain arithmetic is enhanced, just like computers nowadays. The last thing I want to lose is my creativity and imagination as a human being. Because a program is composed of lines of code, it is never said that a program can change itself, nor a program can constantly self-optimizing. If there is, it should be very interesting.
+        </div>
+      </div>
+
+      <div class="separateLine _short"></div>
+      
+      <div class="backgroundText scroll-left QN" id="QN8">
+        <p id="shifter_N8">8</p>
+      </div>
+
+      <div class="QA">
+        <div class="Question" id="Question8">
+          Anything else want to mention?
+        </div>
+        <div class="Answer" id="Answer8">
+          I think the robots that people are currently using are very simple robots, and the path towards the final form of robotics and artificial intelligence is not the path we are on now. The machine learning we use is all based on the computing power of computers, while neural networks simulate the propagation of electrical signals in the human brain. If we just do the imitation, it will not be able to reach the current height of human intelligence. So I feel skeptical, even a pessimistic attitude towards the current way of development.
+        </div>
+      </div>
+    <div class="separateLine" id="bottomLine"></div>
+
+    <div class="QA">
+        <div class="Question" id="Question9">
+        </div>
+        <div class="Answer" id="Answer9">
+        </div>
+      </div>
+  </div>
+
+<!--       <p data-scroll data-scroll-position="top" data-scroll-speed="2">I am currently a management trainee, an engineering management trainee. Currently in the rotation phase, working on surgical robots in the robotics department.</p> -->
+
+  </div>
+</div>
+
+<!-- locomotive scroll -->
+<script type="text/javascript" src="asset/locomotive-scroll.min.js"></script>
+<script type="text/javascript">
+  const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+  });
+
+let processScroll = () => {
+  let docElem = document.documentElement, 
+    docBody = document.body,
+    scrollTop = docElem['scrollTop'] || docBody['scrollTop'],
+      scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight,
+    scrollPercent = scrollTop / scrollBottom * 100 + '%';
+  
+   console.log(scrollTop + ' / ' + scrollBottom + ' / ' + scrollPercent);
+  
+    document.getElementById("progress-bar").style.setProperty("--scrollAmount", scrollPercent); 
+}
+
+document.addEventListener('scroll', processScroll);
+</script>
+
+<script type="text/javascript">
+  function moveFunction(){
+    document.getElementById('lever_arm').classList.toggle('rotated');
+    document.getElementById('lever_arm_head').classList.toggle('colorChange');
+    document.getElementById('shifter1').classList.toggle('aniStop');
+    document.getElementById('shifter2').classList.toggle('aniStop');
+    document.getElementById('shifter_conveyor').classList.toggle('aniStop');
+    document.getElementById('shifter_icon').classList.toggle('aniStop'); 
+    document.getElementById('shifter_N1').classList.toggle('aniStop');
+    document.getElementById('shifter_N2').classList.toggle('aniStop');
+    document.getElementById('shifter_N3').classList.toggle('aniStop');
+    document.getElementById('shifter_N4').classList.toggle('aniStop');
+    document.getElementById('shifter_N5').classList.toggle('aniStop');
+    document.getElementById('shifter_N6').classList.toggle('aniStop');
+    document.getElementById('shifter_N7').classList.toggle('aniStop');
+    document.getElementById('shifter_N8').classList.toggle('aniStop');
+}
+  function extendFunction(){
+    document.getElementById('sidebar').classList.toggle('display');
+  }
+</script>
+
+
+<!-- matter.js -->
+<!-- <script type="text/javascript" src="asset/matter.js"></script>
+<script type="text/javascript">
+  
+// module aliases
+var Engine = Matter.Engine,
+    Render = Matter.Render,
+    Runner = Matter.Runner,
+    Bodies = Matter.Bodies,
+    Composite = Matter.Composite,
+    MouseConstraint = Matter.MouseConstraint,
+    Mouse = Matter.Mouse,
+    Constraint = Matter.Constraint;
+
+// create an engine
+var engine = Engine.create();
+engine.enableSleeping = true;
+
+// create a renderer
+var render = Render.create({
+    element: document.body,
+    engine: engine,
+    options:{wireframes: false}  
+});
+
+var body = document.body,
+    html = document.documentElement;
+
+var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+//set full screen
+render.canvas.width = window.innerWidth;
+render.canvas.height = height;
+
+// get world from engine
+var world = engine.world;
+
+// create grounds
+var groundA = Bodies.rectangle(window.innerWidth/6,window.innerHeight,window.innerWidth/3-1, 60, { isStatic: true });
+var groundB = Bodies.rectangle(window.innerWidth/2,window.innerHeight,window.innerWidth/3-1, 60, { isStatic: true });
+var groundC = Bodies.rectangle(window.innerWidth*5/6,window.innerHeight,window.innerWidth/3-1, 60, { isStatic: true });
+var ceiling = Bodies.rectangle(window.innerWidth/2,-500,window.innerWidth,60,{isStatic:true})
+Composite.add(world, [groundA,groundB,groundC,ceiling]);
+
+// add mouse control
+var mouse = Mouse.create(render.canvas),
+    mouseConstraint = MouseConstraint.create(engine, {
+        mouse: mouse,
+        constraint: {
+            stiffness: 0.1,
+            render: {
+                visible: false
+            }
+        }
+    });
+
+    Composite.add(world, mouseConstraint);
+
+// keep the mouse in sync with rendering
+render.mouse = mouse;
+
+// run the renderer
+Render.run(render);
+
+// create runner
+var runner = Runner.create();
+
+// run the engine
+Runner.run(runner, engine);
+</script> -->
+
+</body>
+</html>

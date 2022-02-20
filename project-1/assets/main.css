@@ -1,0 +1,154 @@
+* {margin: 0; padding: 0}
+body {background: #fff;}
+canvas {display: block;}
+body {
+    font-family: arial, sans-serif;
+}
+
+nav {
+  color: #6c6c6c;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+  background-color:rgb(255,255,255);
+}
+
+a:visited {
+  color: rgb(253, 183, 49);
+}
+
+#shooter{
+    position: absolute;
+    top: 200px;
+    width: 100vw;
+    opacity: 1;
+    z-index: 1;
+}
+
+#wheel{
+    animation-name: ckw;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 61.3% 52.5%;
+    display: inline-block;
+    animation-delay: 4s;
+    /* <--- */
+}
+
+
+@keyframes ckw {
+    0% {
+        transform: rotate(2160deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.chocolate{
+    position: absolute;
+    top: -90px;
+    left: 48vw;
+    display: inline-block;
+}
+
+#BeanI,#BeanN,#BeanT,#BeanE,#BeanR,#BeanA,#BeanC,#BeanT2,#BeanI2,#BeanV,#BeanE2,#BeanRETURN{
+    position: absolute;
+    animation-name: fall, scale;
+    animation-duration: 39s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+}
+
+#BeanI{
+    animation-delay: 3s;
+}
+#BeanN{
+    animation-delay: 6s;
+}
+#BeanT{
+    animation-delay: 9s;
+}
+#BeanE{
+    animation-delay: 12s;
+}
+#BeanR{
+    animation-delay: 15s;
+}
+#BeanA{
+    animation-delay: 18s;
+}
+#BeanC{
+    animation-delay: 21s;
+}
+#BeanT2{
+    animation-delay: 24s;
+}
+#BeanI2{
+    animation-delay: 27s;
+}
+#BeanV{
+    animation-delay: 30s;
+}
+#BeanE2{
+    animation-delay: 33s;
+}
+#BeanRETURN{
+    animation-delay: 36s;
+}
+
+
+
+@keyframes fall{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    5%{
+        top: 350px;
+        left: 0px;
+        opacity: 1;
+    }
+    5.01%{
+        top: 350px;
+        left: 0px;
+        opacity: 0;
+    }
+    5.02%{
+        top: 670px;
+        left: 2vw;
+        opacity: 0;
+    }
+    5.03%{
+        opacity: 1;
+        top: 670px;
+        left: 2vw;
+    }
+    15.0%{
+        top: 500px;
+        left: 100vw;
+    }
+    100%{
+        top: 1000px;
+        left: 100vw;
+    }
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(1) rotate(2160deg);
+    }
+    5.02%{
+        transform: scale(0.5) rotate(1800deg);
+    }
+    5.03%{
+        transform: scale(0.5) rotate(1800deg);
+    }
+    15.0%{
+        transform: scale(2) rotate(0deg);
+    }
+    100%{
+        transform: scale(2) rotate(0deg);;
+    }
+}
+

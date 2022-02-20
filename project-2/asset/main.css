@@ -1,0 +1,311 @@
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(Monoid.ttf);
+}
+
+html{
+  height: 100%;
+  margin: auto;
+}
+
+nav {
+  color: #6c6c6c;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+  background-color:rgb(255,255,255);
+  position: absolute;
+  left: 95vw;
+  z-index: 100;
+}
+
+a:visited {
+  color: rgb(253, 183, 49);
+}
+
+body{
+  background-color: rgb(255,255,255);
+  margin: 0;
+}
+
+#homepage{
+  width: 100vw;
+  height: 100vh;
+}
+
+#interview_content{
+  padding-left: 12vw;
+  padding-right: 12vw;
+  padding-bottom: 40vh;
+}
+#lever_container{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 80vh;
+  left: 90vw;
+  fill: none;
+  stroke: "black";
+  stroke-width: 5px;
+  z-index: 5;
+}
+
+#lever_base{
+  position: relative;
+  top: -60px;
+  width: 200px;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 25px;
+  background-color: white;
+  z-index: 5;
+}
+
+#lever_arm{
+  transform: rotate(-27deg);
+  transform-origin: 43px 138px;
+  transition: all 0.5s ease-in-out;
+}
+
+#lever_arm.rotated{
+  transform: rotate(66deg);
+}
+
+#lever_arm_body{
+  position: relative;
+  top: -10px;
+  left: 40px;
+  width: 10px;
+  height: 150px;
+  background-color: white;
+  border: 3px solid black;
+}
+
+#lever_arm_head{
+  position: relative;
+  top: -200px;
+  left: 30px;
+  width: 30px;
+  height: 50px;
+  background-color: lightgreen;
+  border: 3px solid black;
+  border-radius:15px;
+  z-index: 5;
+  transition: all 0.5s ease-in-out;
+}
+
+#lever_arm_head.colorChange{
+  background-color: red;
+}
+
+#lever_armbase{
+  position: relative;
+  top: -100px;
+  left: 30px;
+  height: 30px;
+  width: 30px;
+  border: 3px solid black;
+  border-radius: 15px;
+  z-index: 4;
+  background-color: white;
+}
+
+#shifter_N1.aniStop{
+  animation-play-state: paused;
+}
+
+#shifter_N2.aniStop{
+  animation-play-state: paused;
+}
+
+#shifter_N3.aniStop{
+  animation-play-state: paused;
+}
+
+#shifter_N4.aniStop{
+  animation-play-state: paused;
+}
+
+#shifter_N5.aniStop{
+  animation-play-state: paused;
+}
+
+#shifter_N6.aniStop{
+  animation-play-state: paused;
+}
+
+#shifter_N7.aniStop{
+  animation-play-state: paused;
+}
+
+#shifter_N8.aniStop{
+  animation-play-state: paused;
+}
+
+h1{
+  font-weight: 400;
+  font-size: 12vw;
+  line-height: .7;
+  display: block;
+}
+
+.separateLine{
+  display: block;
+  width: 75vw;
+  height: 2px;
+  background: rgb(28,28,28);
+}
+
+.Question{
+  display: inline-block;
+  width: 30vw;
+  vertical-align: top;
+  color: rgb(150,150,150);
+  font-weight: 10;
+  height: 60px;
+}
+
+.Answer{
+  display: inline-block;
+  width: 37.5vw;
+  float: right;
+  font-weight: 200;
+}
+
+.QA{
+  padding-top: 150px;
+  font-size: 1vw;
+  font-family: myFirstFont;
+  color: rgb(28,28,28);
+}
+
+._short{
+  width: 47vw;
+  float: right;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.QN{
+  font-size: 20vw;
+  opacity: 0.2;
+  height: 0 !important;
+  overflow: visible !important;
+  top: 115px;
+}
+
+#QN2{
+  top: 415px;
+}
+
+#QN3{
+  top: 445px;
+}
+
+#QN4{
+  top: 335px;
+}
+
+#QN5{
+  top: 305px;
+}
+
+#QN6{
+  top: 385px;
+}
+
+#QN7{
+  top: 365px;
+}
+
+#QN8{
+  top: 400px;
+}
+
+#sidebar{
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  width: 50vw;
+  height: 100vh;
+  background-color: lightgoldenrodyellow;
+  box-shadow:7px 0px 15px #000;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+}
+
+#sidebar.display{
+  left: 0vw;
+}
+
+#sidebar_title{
+  font-size: 9vw;
+}
+
+#sidebar_content p{
+  font-size: 30px;
+}
+
+#clicksection{
+  position: relative;
+  top: 50vh;
+  left: 50vw;
+  width: 35px;
+  height: 100px;
+  background-color: lightgoldenrodyellow;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow:15px 0px 15px #000;
+}
+#sidebar_line{
+  position: relative;
+  top: calc(100px + 13vw);
+  left: 10vw;
+  width: 30vw;
+  height: 2px;
+  background-color: black;
+}
+
+#sidebar_content{
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 50px 50px 50px 50px;
+}
+
+#CS1{
+  position: absolute;
+  top: 1800px;
+  left: 60vw;
+  z-index: -1;
+  width: 20vw;
+}
+
+#CS2{
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  left: 70vw;
+}
+
+#CS1P{
+  width: 25vw;
+}
+#CS2P{
+  width: 25vw;
+}
+
+#bottomLine{
+  position: relative;
+  top: 250px;
+}
+
+#Question8{
+  padding-bottom: 10vh;
+}
+
+
+

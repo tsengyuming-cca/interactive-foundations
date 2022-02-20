@@ -1,0 +1,223 @@
+@keyframes play240 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -345600px 0px;
+  }
+}
+
+.shapeshifter {
+  animation-duration: 4000ms;
+  animation-timing-function: steps(240);
+  animation-iteration-count: infinite;
+  width: 1440px;
+  height: 1027px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%,-41%);
+}
+
+.shapeshifter.play {
+  animation-name: play240;
+}
+
+.backgroundImage{
+    z-index: -1;
+}
+
+#backgroundLine1{
+    width: 75vw;
+    height: 3px;
+    background: rgb(28, 28, 28);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:20vh;
+    left: 50vw;
+}
+
+
+#backgroundLine2{
+    width: 75vw;
+    height: 3px;
+    background: rgb(28, 28, 28);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50vh;
+    left: 50vw;
+}
+
+#backgroundLine3{
+    width: 75vw;
+    height: 3px;
+    background: rgb(28, 28, 28);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:80vh;
+    left: 50vw;
+}
+
+.backgroundText{
+  font-size: 25vh;
+  position: absolute;
+  z-index: -1;
+  color: rgb(28,28,28);
+}
+
+#backgroundword1{
+  top: 24vh;
+}
+
+#backgroundword2{
+  top: 34vh;
+}
+
+.scroll-left {
+ height: 20vh;  
+ overflow: hidden;
+ position: relative;
+}
+
+.scroll-right{
+  height: 20vh;  
+  overflow: hidden;
+  position: relative;
+}
+
+
+#shifter1{
+    animation-play-state: running;
+}
+
+#shifter1.aniStop{
+    animation-play-state: paused;
+}
+
+#shifter2{
+}
+
+#shifter2.aniStop{
+    animation-play-state: paused;
+}
+
+#shifter_conveyor.aniStop{
+    animation-play-state: paused;
+}
+
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 20vh;
+ text-align: center;
+ /* Starting position */
+ transform:translateX(100%);
+ /* Apply animation to this element */
+ animation: scroll-left 20s linear infinite;
+}
+
+.scroll-right p{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   line-height: 20vh;
+   text-align: center;
+   /* Starting position */
+   transform:translateX(-20%);
+   /* Apply animation to this element */
+   animation: scroll-right 20s linear infinite;
+}
+
+/* Move it (define the animation) */
+@keyframes scroll-left {
+ 0%   {
+ transform: translateX(100%);     
+ }
+ 100% {
+ transform: translateX(-100%); 
+ }
+}
+
+@keyframes scroll-right {
+ 0%   {
+ transform: translateX(-100%);     
+ }
+ 100% {
+ transform: translateX(100%); 
+ }
+}
+
+#icon1,#icon2,#icon3,#icon4{
+    width: 512px;
+    height: 512px;
+}
+
+#container ul li{
+    width: 600px;
+    height: 600px;
+}
+
+li{
+    margin-top: calc(50vh - 280px);
+    margin-bottom: 800px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#container{
+    position: absolute;
+    width: 600px;
+    height: 100vh;
+    overflow: hidden;
+    left: calc(50vw - 350px);
+    top: 0;
+    z-index:1;
+}
+
+#shifter_icon{
+    animation-play-state: running;
+}
+
+#shifter_icon.aniStop{
+    animation-play-state: paused;
+}
+
+.icon{
+    position: absolute;
+    animation-name: carousel_vt;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes carousel_vt {
+    0%,5%{
+        top: 1400px;
+    }
+    15%,33%{
+        top: 0px;
+    }
+    50%,66%{
+        top: -1400px;
+    }
+    85%,99%{
+        top: -2800px;
+    }
+    100%{
+        top: -3200px;
+    }
+}
+
+
+
+
+
+
+
+
