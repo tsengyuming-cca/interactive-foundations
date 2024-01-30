@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>7-Segment Display Animation</title>
+    <link rel="stylesheet" type="text/css" href="styles/testmain.css">
+</head>
+<body>
+<div id="vertical-center">
+	<div id="clock-container">
+		<div id="display-6" class="display-container display-size-12 display-no-5">
+			<div class="segment-x segment-a"><span class="segment-border"></span></div>
+			<div class="segment-y segment-b"><span class="segment-border"></span></div>
+			<div class="segment-y segment-c"><span class="segment-border"></span></div>
+			<div class="segment-x segment-d"><span class="segment-border"></span></div>
+			<div class="segment-y segment-e"><span class="segment-border"></span></div>
+			<div class="segment-y segment-f"><span class="segment-border"></span></div>
+			<div class="segment-x segment-g"><span class="segment-border"></span></div>
+		</div>
+		<div id="display-5" class="display-container display-size-12 display-no-4">
+			<div class="segment-x segment-a"><span class="segment-border"></span></div>
+			<div class="segment-y segment-b"><span class="segment-border"></span></div>
+			<div class="segment-y segment-c"><span class="segment-border"></span></div>
+			<div class="segment-x segment-d"><span class="segment-border"></span></div>
+			<div class="segment-y segment-e"><span class="segment-border"></span></div>
+			<div class="segment-y segment-f"><span class="segment-border"></span></div>
+			<div class="segment-x segment-g"><span class="segment-border"></span></div>
+		</div>
+		<svg id="shape" xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" fill="none">
+			
+			<circle id="midCircle" cx="202" cy="203" r="104.5" fill="#404041" fill-opacity="0.1" style="fill:#404041;fill:color(display-p3 0.2510 0.2510 0.2549);fill-opacity:0.1;"/>
+			
+			<path id="arc1" d="M0.975603 20C22.475 7.58733 46.8529 1.02792 71.6782 0.975928C96.5035 0.923933 120.909 7.38117 142.46 19.7037L130.008 41.4807C112.264 31.3351 92.1704 26.0186 71.7307 26.0614C51.291 26.1042 31.2197 31.5048 13.5184 41.7247L0.975603 20Z" fill="#404041" style="fill:#404041;fill:color(display-p3 0.2510 0.2510 0.2549);fill-opacity:1;"/>
+			
+			<path id="arc2" d="M13 0.0243812C34.4994 12.4371 52.3689 30.2692 64.8266 51.7426C77.2843 73.2159 83.8948 97.58 83.9988 122.405L58.9135 122.51C58.8278 102.071 53.3852 82.0107 43.1283 64.3308C32.8713 46.6509 18.1586 31.9689 0.457238 21.7491L13 0.0243812Z" fill="#404041" style="fill:#404041;fill:color(display-p3 0.2510 0.2510 0.2549);fill-opacity:1;"/>
+			
+			<path id="arc3" d="M83.9756 0.975616C83.9756 25.801 77.4673 50.1926 65.0997 71.7179C52.732 93.2432 34.9373 111.15 13.4901 123.653L0.856466 101.981C18.5148 91.6869 33.166 76.9434 43.3488 59.2207C53.5315 41.498 58.8901 21.4154 58.8901 0.975616H83.9756Z" fill="#404041" style="fill:#404041;fill:color(display-p3 0.2510 0.2510 0.2549);fill-opacity:1;"/>
+			
+			<path id="arc4"  d="M141.976 21.9512C120.476 34.3639 96.0983 40.9233 71.273 40.9753C46.4477 41.0273 22.0425 34.5701 0.491343 22.2475L12.943 0.470507C30.687 10.6161 50.7808 15.9327 71.2205 15.8899C91.6602 15.847 111.732 10.4464 129.433 0.226539L141.976 21.9512Z" fill="#404041" style="fill:#404041;fill:color(display-p3 0.2510 0.2510 0.2549);fill-opacity:1;"/>
+			
+			<path id="arc5" d="M71.9756 122.951C50.4762 110.539 32.6067 92.7064 20.149 71.233C7.6913 49.7597 1.08085 25.3955 0.976863 0.570404L26.0621 0.465329C26.1478 20.9049 31.5904 40.9649 41.8473 58.6448C52.1043 76.3247 66.817 91.0067 84.5184 101.227L71.9756 122.951Z" fill="#404041" style="fill:#404041;fill:color(display-p3 0.2510 0.2510 0.2549);fill-opacity:1;"/>
+			
+			<path id="arc6" d="M-9.69943e-07 123C-3.14025e-06 98.1746 6.50833 73.7831 18.876 52.2577C31.2436 30.7324 49.0383 12.8255 70.4855 0.322875L83.1191 21.9948C65.4608 32.2888 50.8096 47.0322 40.6269 64.7549C30.4441 82.4777 25.0855 102.56 25.0855 123L-9.69943e-07 123Z" fill="#404041" style="fill:#404041;fill:color(display-p3 0.2510 0.2510 0.2549);fill-opacity:1;"/>
+		
+		</svg>		
+	</div>
+	<h1 id="display">Hello!</h1>
+	<h1 id="display_7digits">0000001</h1>
+	<h1 id="display_segment">1010101</h1>
+</div>
+
+<script src="scripts/main.js"></script>
+
+
+</body>
+</html>
+

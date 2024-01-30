@@ -1,0 +1,1311 @@
+body {
+  background: #f1f1f2;
+  box-shadow: inset 0 0 10em 2em #bcbcc1;
+  display: block;
+  margin: 0;
+  height: 100vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #404041;
+  pointer-events: none;
+}
+
+.clear {
+    clear: both;
+}
+
+h1, svg {
+  position: absolute;
+  width: 400px;
+  top: 40%;
+  left: 25%; }
+
+#display{
+    top: 207px;
+    left: 146px;
+}
+
+#display_7digits{
+    top: 207px;
+    left: -193px;
+}
+
+#display_segment{
+    top: 207px;
+    left: -456px;
+}
+
+svg {
+  margin: -143.75px 0 0 -125px; }
+  svg #shape polygon {
+    fill: #404041;
+    opacity: 0;
+    -webkit-transition: all 0.25s ease;
+            transition: all 0.25s ease; }
+    svg #shape polygon.active {
+      opacity: 1; }
+  svg > polygon {
+    fill: #d7d7d9; }
+
+.display-container.display-size-12 {
+    margin-bottom: 24px;
+    margin-top: 70px;
+}
+
+
+.display-container {
+    position: relative;
+    float: left;
+    margin-right: 100px;
+}
+
+.display-container div.segment-x,
+.display-container div.segment-y {
+    position: absolute;
+}
+
+.display-container span.segment-border {
+    display: block;
+    position: absolute;
+}
+
+.display-container.display-size-12 {
+    width: 165px;
+    height: 220px;
+}
+
+.display-container.display-size-12 .segment-x {
+    width: 72px;
+    left: 13px;
+    border-bottom: 12px solid #404041;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+}
+
+.display-container.display-size-12 .segment-x .segment-border {
+    top: 12px;
+    left: -12px;
+    right: -12px;
+    border-top: 12px solid #404041;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+}
+
+.display-container.display-size-12 .segment-y {
+    height: 72px;
+    width: 0;
+    border-right: 12px solid #404041;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+.display-container.display-size-12 .segment-y .segment-border {
+    position: relative;
+    left: 12px;
+    height: 72px;
+    margin-top: -12px;
+    border-left: 12px solid #404041;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+.display-container.display-size-12 .segment-a {
+    top: 0;
+}
+
+.display-container.display-size-12 .segment-b {
+    top: 13px;
+    left: 98px;
+}
+
+.display-container.display-size-12 .segment-c {
+    top: 111px;
+    left: 98px;
+}
+
+.display-container.display-size-12 .segment-d {
+    top: 196px;
+}
+
+.display-container.display-size-12 .segment-e {
+    top: 111px;
+    left: 0px;
+}
+
+.display-container.display-size-12 .segment-f {
+    top: 13px;
+    left: 0px;
+}
+
+.display-container.display-size-12 .segment-g {
+    top: 98px;
+}
+
+.display-no-1 .segment-a,
+.display-no-1 .segment-d,
+.display-no-1 .segment-e,
+.display-no-1 .segment-f,
+.display-no-1 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
+
+.display-no-2 .segment-c,
+.display-no-2 .segment-f {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-3 .segment-e,
+.display-no-3 .segment-f {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-4 .segment-a,
+.display-no-4 .segment-d,
+.display-no-4 .segment-e {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-5 .segment-b,
+.display-no-5 .segment-e {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-6 .segment-b {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-7 .segment-d,
+.display-no-7 .segment-e,
+.display-no-7 .segment-f,
+.display-no-7 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-8 {}
+
+.display-no-9 .segment-e {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-0 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-10 .segment-a,
+.display-no-10 .segment-b,
+.display-no-10 .segment-c,
+.display-no-10 .segment-d,
+.display-no-10 .segment-e,
+.display-no-10 .segment-f,
+.display-no-10 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
+
+.display-no-11 .segment-b,
+.display-no-11 .segment-c,
+.display-no-11 .segment-d,
+.display-no-11 .segment-e,
+.display-no-11 .segment-f,
+.display-no-11 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-12 .segment-a,
+.display-no-12 .segment-c,
+.display-no-12 .segment-d,
+.display-no-12 .segment-e,
+.display-no-12 .segment-f,
+.display-no-12 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-13 .segment-c,
+.display-no-13 .segment-d,
+.display-no-13 .segment-e,
+.display-no-13 .segment-f,
+.display-no-13 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-14 .segment-a,
+.display-no-14 .segment-b,
+.display-no-14 .segment-d,
+.display-no-14 .segment-e,
+.display-no-14 .segment-f,
+.display-no-14 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-15 .segment-b,
+.display-no-15 .segment-d,
+.display-no-15 .segment-e,
+.display-no-15 .segment-f,
+.display-no-15 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-16 .segment-a,
+.display-no-16 .segment-d,
+.display-no-16 .segment-e,
+.display-no-16 .segment-f,
+.display-no-16 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-17 .segment-d,
+.display-no-17 .segment-e,
+.display-no-17 .segment-f,
+.display-no-17 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-18 .segment-a,
+.display-no-18 .segment-b,
+.display-no-18 .segment-c,
+.display-no-18 .segment-e,
+.display-no-18 .segment-f,
+.display-no-18 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-19 .segment-b,
+.display-no-19 .segment-c,
+.display-no-19 .segment-e,
+.display-no-19 .segment-f,
+.display-no-19 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-20 .segment-a,
+.display-no-20 .segment-c,
+.display-no-20 .segment-e,
+.display-no-20 .segment-f,
+.display-no-20 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-21 .segment-c,
+.display-no-21 .segment-e,
+.display-no-21 .segment-f,
+.display-no-21 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-22 .segment-a,
+.display-no-22 .segment-b,
+.display-no-22 .segment-e,
+.display-no-22 .segment-f,
+.display-no-22 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-23 .segment-b,
+.display-no-23 .segment-e,
+.display-no-23 .segment-f,
+.display-no-23 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-24 .segment-a,
+.display-no-24 .segment-e,
+.display-no-24 .segment-f,
+.display-no-24 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-25 .segment-e,
+.display-no-25 .segment-f,
+.display-no-25 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-26 .segment-a,
+.display-no-26 .segment-b,
+.display-no-26 .segment-c,
+.display-no-26 .segment-d,
+.display-no-26 .segment-f,
+.display-no-26 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-27 .segment-b,
+.display-no-27 .segment-c,
+.display-no-27 .segment-d,
+.display-no-27 .segment-f,
+.display-no-27 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-28 .segment-a,
+.display-no-28 .segment-c,
+.display-no-28 .segment-d,
+.display-no-28 .segment-f,
+.display-no-28 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-29 .segment-c,
+.display-no-29 .segment-d,
+.display-no-29 .segment-f,
+.display-no-29 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-30 .segment-a,
+.display-no-30 .segment-b,
+.display-no-30 .segment-d,
+.display-no-30 .segment-f,
+.display-no-30 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-31 .segment-b,
+.display-no-31 .segment-d,
+.display-no-31 .segment-f,
+.display-no-31 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-32 .segment-a,
+.display-no-32 .segment-d,
+.display-no-32 .segment-f,
+.display-no-32 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-33 .segment-d,
+.display-no-33 .segment-f,
+.display-no-33 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-34 .segment-a,
+.display-no-34 .segment-b,
+.display-no-34 .segment-c,
+.display-no-34 .segment-f,
+.display-no-34 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-35 .segment-b,
+.display-no-35 .segment-c,
+.display-no-35 .segment-f,
+.display-no-35 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-36 .segment-a,
+.display-no-36 .segment-c,
+.display-no-36 .segment-f,
+.display-no-36 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-37 .segment-c,
+.display-no-37 .segment-f,
+.display-no-37 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-38 .segment-a,
+.display-no-38 .segment-b,
+.display-no-38 .segment-f,
+.display-no-38 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-39 .segment-b,
+.display-no-39 .segment-f,
+.display-no-39 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-40 .segment-a,
+.display-no-40 .segment-f,
+.display-no-40 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-41 .segment-f,
+.display-no-41 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-42 .segment-a,
+.display-no-42 .segment-b,
+.display-no-42 .segment-c,
+.display-no-42 .segment-d,
+.display-no-42 .segment-e,
+.display-no-42 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
+
+.display-no-43 .segment-b,
+.display-no-43 .segment-c,
+.display-no-43 .segment-d,
+.display-no-43 .segment-e,
+.display-no-43 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-44 .segment-a,
+.display-no-44 .segment-c,
+.display-no-44 .segment-d,
+.display-no-44 .segment-e,
+.display-no-44 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-45 .segment-c,
+.display-no-45 .segment-d,
+.display-no-45 .segment-e,
+.display-no-45 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-46 .segment-a,
+.display-no-46 .segment-b,
+.display-no-46 .segment-d,
+.display-no-46 .segment-e,
+.display-no-46 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-47 .segment-b,
+.display-no-47 .segment-d,
+.display-no-47 .segment-e,
+.display-no-47 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-48 .segment-a,
+.display-no-48 .segment-d,
+.display-no-48 .segment-e,
+.display-no-48 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-49 .segment-d,
+.display-no-49 .segment-e,
+.display-no-49 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-50 .segment-a,
+.display-no-50 .segment-b,
+.display-no-50 .segment-c,
+.display-no-50 .segment-e,
+.display-no-50 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-51 .segment-b,
+.display-no-51 .segment-c,
+.display-no-51 .segment-e,
+.display-no-51 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-52 .segment-a,
+.display-no-52 .segment-c,
+.display-no-52 .segment-e,
+.display-no-52 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-53 .segment-c,
+.display-no-53 .segment-e,
+.display-no-53 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-54 .segment-a,
+.display-no-54 .segment-b,
+.display-no-54 .segment-e,
+.display-no-54 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-55 .segment-b,
+.display-no-55 .segment-e,
+.display-no-55 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-56 .segment-a,
+.display-no-56 .segment-e,
+.display-no-56 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-57 .segment-e,
+.display-no-57 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-58 .segment-a,
+.display-no-58 .segment-b,
+.display-no-58 .segment-c,
+.display-no-58 .segment-d,
+.display-no-58 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-59 .segment-b,
+.display-no-59 .segment-c,
+.display-no-59 .segment-d,
+.display-no-59 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-60 .segment-a,
+.display-no-60 .segment-c,
+.display-no-60 .segment-d,
+.display-no-60 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-61 .segment-c,
+.display-no-61 .segment-d,
+.display-no-61 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-62 .segment-a,
+.display-no-62 .segment-b,
+.display-no-62 .segment-d,
+.display-no-62 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-63 .segment-b,
+.display-no-63 .segment-d,
+.display-no-63 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-64 .segment-a,
+.display-no-64 .segment-d,
+.display-no-64 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-65 .segment-d,
+.display-no-65 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-66 .segment-a,
+.display-no-66 .segment-b,
+.display-no-66 .segment-c,
+.display-no-66 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-67 .segment-b,
+.display-no-67 .segment-c,
+.display-no-67 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-68 .segment-a,
+.display-no-68 .segment-c,
+.display-no-68 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-69 .segment-c,
+.display-no-69 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-70 .segment-a,
+.display-no-70 .segment-b,
+.display-no-70 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-71 .segment-b,
+.display-no-71 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-72 .segment-a,
+.display-no-72 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-73 .segment-g {
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-74 .segment-a,
+.display-no-74 .segment-b,
+.display-no-74 .segment-c,
+.display-no-74 .segment-d,
+.display-no-74 .segment-e,
+.display-no-74 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
+
+.display-no-75 .segment-b,
+.display-no-75 .segment-c,
+.display-no-75 .segment-d,
+.display-no-75 .segment-e,
+.display-no-75 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-76 .segment-a,
+.display-no-76 .segment-c,
+.display-no-76 .segment-d,
+.display-no-76 .segment-e,
+.display-no-76 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-77 .segment-c,
+.display-no-77 .segment-d,
+.display-no-77 .segment-e,
+.display-no-77 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-78 .segment-a,
+.display-no-78 .segment-b,
+.display-no-78 .segment-d,
+.display-no-78 .segment-e,
+.display-no-78 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-79 .segment-b,
+.display-no-79 .segment-d,
+.display-no-79 .segment-e,
+.display-no-79 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-80 .segment-a,
+.display-no-80 .segment-d,
+.display-no-80 .segment-e,
+.display-no-80 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-81 .segment-d,
+.display-no-81 .segment-e,
+.display-no-81 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-82 .segment-a,
+.display-no-82 .segment-b,
+.display-no-82 .segment-c,
+.display-no-82 .segment-e,
+.display-no-82 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-83 .segment-b,
+.display-no-83 .segment-c,
+.display-no-83 .segment-e,
+.display-no-83 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-84 .segment-a,
+.display-no-84 .segment-c,
+.display-no-84 .segment-e,
+.display-no-84 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-85 .segment-c,
+.display-no-85 .segment-e,
+.display-no-85 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-86 .segment-a,
+.display-no-86 .segment-b,
+.display-no-86 .segment-e,
+.display-no-86 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-87 .segment-b,
+.display-no-87 .segment-e,
+.display-no-87 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-88 .segment-a,
+.display-no-88 .segment-e,
+.display-no-88 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-89 .segment-e,
+.display-no-89 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-90 .segment-a,
+.display-no-90 .segment-b,
+.display-no-90 .segment-c,
+.display-no-90 .segment-d,
+.display-no-90 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-91 .segment-b,
+.display-no-91 .segment-c,
+.display-no-91 .segment-d,
+.display-no-91 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-92 .segment-a,
+.display-no-92 .segment-c,
+.display-no-92 .segment-d,
+.display-no-92 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-93 .segment-c,
+.display-no-93 .segment-d,
+.display-no-93 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-94 .segment-a,
+.display-no-94 .segment-b,
+.display-no-94 .segment-d,
+.display-no-94 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-95 .segment-b,
+.display-no-95 .segment-d,
+.display-no-95 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-96 .segment-a,
+.display-no-96 .segment-d,
+.display-no-96 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-97 .segment-d,
+.display-no-97 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-98 .segment-a,
+.display-no-98 .segment-b,
+.display-no-98 .segment-c,
+.display-no-98 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-99 .segment-b,
+.display-no-99 .segment-c,
+.display-no-99 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-100 .segment-a,
+.display-no-100 .segment-c,
+.display-no-100 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-101 .segment-c,
+.display-no-101 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-102 .segment-a,
+.display-no-102 .segment-b,
+.display-no-102 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-103 .segment-b,
+.display-no-103 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-104 .segment-a,
+.display-no-104 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-105 .segment-f{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-106 .segment-a,
+.display-no-106 .segment-b,
+.display-no-106 .segment-c,
+.display-no-106 .segment-d,
+.display-no-106 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
+
+.display-no-107 .segment-b,
+.display-no-107 .segment-c,
+.display-no-107 .segment-d,
+.display-no-107 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-108 .segment-a,
+.display-no-108 .segment-c,
+.display-no-108 .segment-d,
+.display-no-108 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-109 .segment-c,
+.display-no-109 .segment-d,
+.display-no-109 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-110 .segment-a,
+.display-no-110 .segment-b,
+.display-no-110 .segment-d,
+.display-no-110 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-111 .segment-b,
+.display-no-111 .segment-d,
+.display-no-111 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-112 .segment-a,
+.display-no-112 .segment-d,
+.display-no-112 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-113 .segment-d,
+.display-no-113 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-114 .segment-a,
+.display-no-114 .segment-b,
+.display-no-114 .segment-c,
+.display-no-114 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-115 .segment-b,
+.display-no-115 .segment-c,
+.display-no-115 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-116 .segment-a,
+.display-no-116 .segment-c,
+.display-no-116 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-117 .segment-c,
+.display-no-117 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-118 .segment-a,
+.display-no-118 .segment-b,
+.display-no-118 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-119 .segment-b,
+.display-no-119 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-120 .segment-a,
+.display-no-120 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-121 .segment-e{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-122 .segment-a,
+.display-no-122 .segment-b,
+.display-no-122 .segment-c,
+.display-no-122 .segment-d{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-123 .segment-b,
+.display-no-123 .segment-c,
+.display-no-123 .segment-d{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-124 .segment-a,
+.display-no-124 .segment-c,
+.display-no-124 .segment-d{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-125 .segment-c,
+.display-no-125 .segment-d{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-126 .segment-a,
+.display-no-126 .segment-b,
+.display-no-126 .segment-d{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-127 .segment-b,
+.display-no-127 .segment-d{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-128 .segment-a,
+.display-no-128 .segment-d{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+
+.display-no-129 .segment-d{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-130 .segment-a,
+.display-no-130 .segment-b,
+.display-no-130 .segment-c{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-131 .segment-b,
+.display-no-131 .segment-c{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-132 .segment-a,
+.display-no-132 .segment-c{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-133 .segment-c{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-134 .segment-a,
+.display-no-134 .segment-b{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-135 .segment-b{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-136 .segment-a{
+    /*display: none;*/
+    opacity: 0.1;
+}
+
+.display-no-137 {}
+
+
+
+/* clock */
+
+#display-2, #display-4 {
+    margin-right: 60px;
+}
+
+#vertical-center {
+    position: absolute;
+    height: 0;
+    top: 40%;
+    left: 50%;
+}
+
+#clock-container {
+    margin-top: -110px;
+    margin-left: -462px;
+    width: 924px;
+    height: 220px;
+}
+
+#clock-container .display-container:last-child {
+    margin: 0;
+}
+
+#clock-container:after {
+    display: block;
+    content: '.';
+    visibility: hidden;
+    clear: both;
+}
+
+
+#arc1,#arc2,#arc3,#arc4,#arc5,#arc6{
+    -webkit-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+    opacity: 0.1;
+}
+
+#arc1{
+    transform: translate(130px,60px);
+}
+
+#arc2{
+    transform: translate(260px,80px);
+}
+
+#arc3{
+    transform: translate(260px,202px);
+}
+
+#arc4{
+    transform: translate(131px,304px);
+}
+
+#arc5{
+    transform: translate(59px,203px);
+}
+
+#arc6{
+    transform: translate(60px,80px);
+}
+
+#arc1.active {
+    transform: translate(130px, 50px);
+    opacity: 1;
+}
+
+#arc2.active {
+    transform: translate(268.7px, 75px);
+    opacity: 1;
+}
+
+
+#arc3.active {
+    transform: translate(268.7px, 207px);
+    opacity: 1;
+}
+
+
+#arc4.active {
+    transform: translate(131px, 314px);
+    opacity: 1;
+}
+
+
+#arc5.active {
+    transform: translate(50.3px, 208px);
+    opacity: 1;
+}
+
+
+#arc6.active {
+    transform: translate(51.3px, 75px);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
